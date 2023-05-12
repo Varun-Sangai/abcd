@@ -59,11 +59,6 @@ int main() {
    int n;
    cout << "Enter the number of elements: ";
    cin >> n;
-   int arr[n];    
-   //cout << "Enter elements:" << endl;
-   for(int i = 0; i<n; i++) {
-      arr[i]=rand()%1000;
-   }
    cout << "Array before Sorting: ";
    cout<<endl;
    display(arr, n);

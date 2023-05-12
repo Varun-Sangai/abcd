@@ -10,19 +10,7 @@ int sumOfSubsets_R(vector<int>& arr, int index, int sum) {
     return include + exclude;
 }
 
-int sumOfSubsets_I(vector<int>& arr) {
-    int n = arr.size();
-    int total = pow(2, n);
-    int sum = 0;
-    for (int i = 0; i < total; i++) {
-        for (int j = 0; j < n; j++) {
-            if (i & (1 << j)) {
-                sum += arr[j];
-            }
-        }
-    }
-    return sum;
-}
+
 
 int main() {
     vector<int> arr = {1, 2, 3};
